@@ -15,6 +15,15 @@ a {
 ul>li {
     list-style: none;
 }
+
+.main-sup {
+    font-size: 12px;
+}
+
+sup {
+    font-size: 8px;
+}
+
 /* header with navigation */
 .wrap-nav{
     background-color: #1f1f56;
@@ -63,12 +72,27 @@ li:hover>a {
     content: url(../img/fb.png);
 }
 
+.fb:hover>a {
+    background: url() no-repeat center;
+    transition: .1s ease all;
+}
+
 .tw::before {
     content: url(../img/tw.png);
 }
 
+.tw:hover>a {
+    background: url() no-repeat center;
+    transition: .1s ease all;
+}
+
 .inst::before {
     content: url(../img/inst.png);
+}
+
+.inst:hover>a {
+    background: url() no-repeat center;
+    transition: .1s ease all;
 }
 
 /* company logo */
@@ -81,6 +105,10 @@ li:hover>a {
     max-width: 960px;
 }
 /* phone number */
+.contact {
+    position: relative;
+    padding-left: 10px;
+}
 .contact a {
     color: #25252c;
     font-size: 18px;
@@ -96,9 +124,11 @@ li:hover>a {
 }
 
 .mail {
+    padding-left: 10px;
     color: #25252c;
     font-size: 16px;
     line-height: 1.5em;
+    position: relative;
 }
 
 .mail a {
@@ -117,11 +147,15 @@ li:hover>a {
 /* pseudo styles for icons */
 .phone::before {
     content: url(../img/phone.png);
+    position: absolute;
+    left: -15px;
 
 }
 
 .email::before {
     content: url(../img/email.png);
+    position: absolute;
+    left: -15px;
 }
 
 .underline {
@@ -130,6 +164,8 @@ li:hover>a {
 
 .underline::before {
     content: url(../img/skype.png);
+    position: absolute;
+    left: -15px;
 }
 
 /* communication button */
@@ -242,12 +278,15 @@ h1 {
     color: #fd8300;
     font-size: 14px;
     font-weight: bold;
-    text-decoration: underline;
     line-height: 1.7em;
 }
 
+.info:hover>a {
+    text-decoration: underline;
+}
+
 .line {
-    margin: 15px 0;
+    margin: 22px 0 15px;
     border-bottom: 1px solid #e4e4ec;
 }
 
@@ -264,7 +303,11 @@ h2 {
 /* progect of house  */
 .prog-wrap{
     display: flex;
-    column-gap: 20px;
+    column-gap: 15px;
+}
+
+.prog-wrap img {
+    width: 100%;
 }
 
 .edmond,
@@ -288,9 +331,9 @@ h3 {
     text-decoration: none;
 }
 
-.edmond h3:hover>a,
-.montreal h3:hover>a,
-.calgary h3:hover>a {
+h3:hover>a,
+h3:hover>a,
+h3:hover>a {
     text-decoration: underline;
 }
 
@@ -314,8 +357,8 @@ h3 {
 
 .category {
     margin: 0;
-    padding: 15px;
-    width: 220px;
+    padding: 10px 15px;
+    width: 200px;
     color: #fff;
     font-size: 16px;
     font-family: "Roboto Slab", serif;
@@ -334,9 +377,11 @@ h3 {
     background-color: #e4e4ec;
 }
 
-.list .skr:last-child {
-    box-shadow: none;
+.list {
     border-radius: 0 0 3px 3px;
+}
+.skr:last-child {
+    box-shadow: none;
 }
 
 .skr {
@@ -345,7 +390,7 @@ h3 {
 
 .skr a {
     display: block;
-    padding: 15px;
+    padding: 10px 15px 10px;
 }
 
 .menu a {
@@ -360,13 +405,13 @@ h3 {
 
 .skr-child a {
     display: block;
-    padding: 15px;
+    padding-left: 30px;
+    color: #666666;
 }
 
 .skr-child li:hover>a {
     color: #666666;
     background-color: #cecedd;
-    transition-duration: 1s;
 }
 
 .skr:hover>.skr-child{
