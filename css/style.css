@@ -64,36 +64,36 @@ li:hover>a {
 
 .social ul {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     column-gap: 25px;
 }
 
 .fb::before {
-    content: url(../img/fb.png);
+    content: url(../img/fb-white.png);
 }
 
-.fb:hover>a {
-    background: url() no-repeat center;
+/* li:hover>.fb {
     transition: .1s ease all;
-}
+} */
 
 .tw::before {
     content: url(../img/tw.png);
+    padding: 0 5px;
 }
 
-.tw:hover>a {
-    background: url() no-repeat center;
+/* li:hover>.tw {
     transition: .1s ease all;
-}
+} */
 
 .inst::before {
     content: url(../img/inst.png);
+    padding-right: 5px;
 }
 
-.inst:hover>a {
-    background: url() no-repeat center;
+/* li:hover>.inst {
     transition: .1s ease all;
-}
+} */
 
 /* company logo */
 .header-wrap {
@@ -109,6 +109,7 @@ li:hover>a {
     position: relative;
     padding-left: 10px;
 }
+
 .contact a {
     color: #25252c;
     font-size: 18px;
@@ -139,27 +140,32 @@ li:hover>a {
 .contact ul,
 .mail ul{
     padding: 0;
+
+}
+.contact li,
+.mail li {
+    padding-bottom: 6px;
 }
 
-.mail ul>li {
+.mail li {
     list-style: none;
 }
+
+.mail li:hover>a{
+    text-decoration: underline;
+}
+
 /* pseudo styles for icons */
 .phone::before {
     content: url(../img/phone.png);
     position: absolute;
     left: -15px;
-
 }
 
 .email::before {
     content: url(../img/email.png);
     position: absolute;
     left: -15px;
-}
-
-.underline {
-    text-decoration: underline;
 }
 
 .underline::before {
@@ -218,6 +224,7 @@ li:hover>a {
 /* offers */
 .texthead {
     margin: 0;
+    padding: 5px 0;
     color: #fff;
     font-size: 14px;
     text-align: center;
@@ -281,7 +288,7 @@ h1 {
     line-height: 1.7em;
 }
 
-.info:hover>a {
+.detail:hover {
     text-decoration: underline;
 }
 
@@ -303,12 +310,13 @@ h2 {
 /* progect of house  */
 .prog-wrap{
     display: flex;
+    width: 100%;
     column-gap: 15px;
 }
 
-.prog-wrap img {
+/* .prog-wrap img {
     width: 100%;
-}
+} */
 
 .edmond,
 .montreal,
