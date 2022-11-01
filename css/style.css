@@ -339,8 +339,6 @@ h3 {
     text-decoration: none;
 }
 
-h3:hover>a,
-h3:hover>a,
 h3:hover>a {
     text-decoration: underline;
 }
@@ -388,6 +386,41 @@ h3:hover>a {
 .list {
     border-radius: 0 0 3px 3px;
 }
+
+.list .arrow::after{
+    content: url(../img/arrow.png);
+    position: relative;
+}
+
+#ar1::after {
+    left: 64px;
+}
+
+#ar2::after {
+    left: 18px;
+}
+
+#ar3::after {
+    left: 68px;
+}
+
+#ar4::after {
+    left: 68px;
+}
+
+#ar5::after {
+    left: 81px;
+}
+
+#ar6::after{
+    left: 89px;
+}
+
+.list li:hover>.arrow::after{
+    content: url(../img/arrow-t.png);
+    position: relative;
+}
+
 .skr:last-child {
     box-shadow: none;
 }
@@ -426,18 +459,6 @@ h3:hover>a {
    display: block;
 }
 
-/* command for side arrows */
-.arrow-right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-}
-
-i {
-    border: solid #666;
-    border-width: 0 1px 1px 0;
-    display: inline-block;
-    padding: 3px;
-}
 /* bottom navigation */
 .company {
     margin: 0 auto;
