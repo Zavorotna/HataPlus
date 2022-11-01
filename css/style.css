@@ -63,37 +63,39 @@ li:hover>a {
 }
 
 .social ul {
-    display: flex;
     width: 100%;
+    display: flex;
     justify-content: space-between;
     column-gap: 25px;
 }
+
 
 .fb::before {
     content: url(../img/fb-white.png);
 }
 
-/* li:hover>.fb {
+li:hover>.fb {
+    content: url(../img/fb.png);
     transition: .1s ease all;
-} */
+}
 
 .tw::before {
     content: url(../img/tw.png);
-    padding: 0 5px;
 }
 
-/* li:hover>.tw {
+li:hover>.tw {
+    content: url(../img/tw-orange.png);
     transition: .1s ease all;
-} */
+}
 
 .inst::before {
     content: url(../img/inst.png);
-    padding-right: 5px;
 }
 
-/* li:hover>.inst {
+li:hover>.inst {
+    content: url(../img/inst-orange.png);
     transition: .1s ease all;
-} */
+}
 
 /* company logo */
 .header-wrap {
