@@ -183,19 +183,33 @@ li:hover>.inst {
 
 /* pseudo styles for icons */
 .phone::before {
-    content: url(../img/phone.png);
+    content: "";
+    background: url(../img/sprite.png);
+    background-position: -53px 0;
+    width: 16px;
+    height: 17px;
     position: absolute;
+    top: 18px;
     left: -15px;
 }
 
 .email::before {
-    content: url(../img/email.png);
+    content: "";
+    background: url(../img/sprite.png);
+    background-position: -71px -3px;
+    width: 17px;
+    height: 13px;
     position: absolute;
+    top: 18px;
     left: -15px;
 }
 
-.underline::before {
-    content: url(../img/skype.png);
+.skype::before {
+    content: "";
+    background: url(../img/sprite.png);
+    background-position: -90px 0;
+    width: 18px;
+    height: 19px;
     position: absolute;
     left: -15px;
 }
