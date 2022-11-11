@@ -451,38 +451,33 @@ h3:hover>a {
     border-radius: 0 0 3px 3px;
 }
 
-.list .arrow::after{
-    content: url(../img/arrow.png);
+.skr  {
     position: relative;
 }
 
-#ar1::after {
-    left: 64px;
+.arrow::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-bottom: 1px solid #262626;
+    border-right: 1px solid #262626;
+    transform: rotate(-45deg);
+    top: 45%;
+    right: 6%;
 }
 
-#ar2::after {
-    left: 18px;
-}
+.list>li:hover>.arrow::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    top: 10%;
+    right: 6%;
 
-#ar3::after {
-    left: 68px;
-}
-
-#ar4::after {
-    left: 68px;
-}
-
-#ar5::after {
-    left: 81px;
-}
-
-#ar6::after{
-    left: 89px;
-}
-
-.list li:hover>.arrow::after{
-    content: url(../img/arrow-t.png);
-    position: relative;
 }
 
 .skr:last-child {
