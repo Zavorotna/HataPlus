@@ -22,11 +22,13 @@
     font-display: swap;
 }
 
+html {
+    font-size: 1px;
+}
+
 body {
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff;
-    box-sizing: border-box;
     /* main cursore */
     cursor: url(../img/cursoremain.cur), default;
 }
@@ -36,524 +38,418 @@ a {
     cursor: url(../img/click.cur), default;
 }
 
-ul>li {
-    list-style: none;
-}
-
-.main-sup {
-    font-size: 12px;
-}
-
 sup {
-    font-size: 8px;
+    font-size: 0.7em;
 }
 
-/* header with navigation */
-.wrap-nav{
-    background-color: #1f1f56;
+hr {
+    margin: 30rem 0;
+    border: none;
+    border-top: 1rem solid #e4e4ec;
 }
 
-.wrap-child {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-.wrap-child ul{
-    padding: 0;
-}
-
-.main-nav a {
-    color: #b1b1d2;
-    font-size: 14px;
-    text-decoration: none;
-    line-height: 1.7em;
-}
-/* color change when hovering over a hyperlink */
-li:hover>a {
-    color: #fd8300;
-}
-
-.main-nav ul {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 30px;
-}
-
-.main-nav ul>li {
-    list-style: none;
-}
-
-
-.social ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    column-gap: 25px;
-}
-
-.social .fb {
-    display: block;
-    width: 10px;
-    height: 20px;
-    background: url(../img/sprite.png) no-repeat;
-}
-
-a.fb {
-    background-position: 0 0;
-    height: 19px;
-    width: 10px;
-}
-
-li:hover>.fb {
-    background-position: 0 -21px;
-    height: 19px;
-    width: 10px;
-}
-
-.social a {
-    display: block;
-    width: 18px;
-    height: 20px;
-    background: url(../img/sprite.png) no-repeat;
- 
-}
-
-a.tw {
-    background-position: -12px 0;
-    width: 18px;
-    height: 20px;
-}
-
-li:hover>.tw {
-    background-position: -12px -21px;
-    width: 18px;
-    height: 20px;
-}
-
-a.inst {
-    background-position: -32px 0;
-    width: 19px;
-    height: 19px; 
-}
-
-li:hover>.inst {
-    background-position: -32px -21px;
-    width: 19px;
-    height: 19px; 
-}
-
-/* company logo */
-.header-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    margin: 15px auto;
-    max-width: 960px;
-}
-/* phone number */
-.contact {
-    position: relative;
-    padding-left: 10px;
-}
-
-.contact a {
-    color: #25252c;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    line-height: 1.3em;
-}
-
-.vertical-line {
-    display: inline;
-    height: 51px;
-    border-left: 2px solid #e4e4ec;
-}
-
-.mail {
-    padding-left: 10px;
-    color: #25252c;
-    font-size: 16px;
-    line-height: 1.5em;
-    position: relative;
-}
-
-.mail a {
-    color: #25252c;
-    text-decoration: none;
-}
-
-.contact ul,
-.mail ul{
-    padding: 0;
-
-}
-.contact li,
-.mail li {
-    padding-bottom: 6px;
-}
-
-.mail li {
-    list-style: none;
-}
-
-.mail li:hover>a{
-    text-decoration: underline;
-}
-
-/* pseudo styles for icons */
-.phone::before {
-    content: "";
-    background: url(../img/sprite.png);
-    background-position: -53px 0;
-    width: 16px;
-    height: 17px;
-    position: absolute;
-    top: 18px;
-    left: -15px;
-}
-
-.email::before {
-    content: "";
-    background: url(../img/sprite.png);
-    background-position: -71px -3px;
-    width: 17px;
-    height: 13px;
-    position: absolute;
-    top: 18px;
-    left: -15px;
-}
-
-.skype::before {
-    content: "";
-    background: url(../img/sprite.png);
-    background-position: -90px 0;
-    width: 18px;
-    height: 19px;
-    position: absolute;
-    left: -15px;
-}
-
-/* communication button */
-.butt:hover {
-    background-color: #fd8300;
-    transition-duration: 0.5s;
-}
-.butt:hover>a{
-    color: #fff;
-    font-size: 17px;
-    transition-duration: 1s;
-}
-
-.butt {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 50px;
-    background-color: #fff;
-    border-radius: 28px;
-    border: 2px solid #fd8300;
-}
-
-.butt a {
-    color: #25252c;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 1.5em;
-}
-/* main picture with offers */
-.head {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(../img/mainfoto.png);
-    background-size: 100% auto;
-}
-
-.propmonth {
-    margin: 0 auto;
-    padding: 50px 0 0;
-    color: #fff;
-    font-size: 30px;
-    font-family: "Roboto Slab", serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-/* offers */
-.texthead {
+figure {
     margin: 0;
-    padding: 5px 0;
-    color: #fff;
-    font-size: 14px;
-    text-align: center;
-    line-height: 1.7em;
-}
-
-.price {
-    margin: 0 auto;
-    padding: 0 0 30px;
-    color: #fd8300;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.unit {
-    color: #fd8300;
-    font-size: 24px;
-    line-height: 1em;
-}
-/* basic information about the company */
-.blog-wrap {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: 40px auto 45px;
-    max-width: 960px;
 }
 
 h1 {
-    margin: 0;
-    padding: 0 0 14px;
+    margin-top: 0;
     color: #24242b;
-    font-family: "Roboto Slab", serif;
-    font-size: 30px;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    max-width: 670px;
-}
-
-.content p {
-    margin: 0;
-    padding-right: 15px;
-    color: #666;
-    font-size: 14px;
-    line-height: 1.7em;
-}
-
-.indent,
-.second-indent {
-    padding: 10px 0;
-}
-
-.content a {
-    padding: 15px 0;
-    color: #fd8300;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 1.7em;
-}
-
-.detail:hover {
-    text-decoration: underline;
-}
-
-.line {
-    margin: 22px 0 15px;
-    border-bottom: 1px solid #e4e4ec;
+    font: bold 30rem "Roboto Slab", serif;
 }
 
 h2 {
     margin: 0;
-    padding: 15px 0 25px;
+    padding: 15px 0;
     color: #24242b;
-    font-family: "Roboto Slab", serif;
-    font-size: 24px;
-    font-weight: 700;
+    font: bold 24rem "Roboto Slab", serif;
     line-height: 1em;
 }
 
-/* progect of house  */
-.prog-wrap{
-    display: flex;
-    width: 100%;
-    column-gap: 15px;
-}
-
-/* .prog-wrap img {
-    width: 100%;
-} */
-
-.edmond,
-.montreal,
-.calgary {
-    margin: 0;
-}
-
 h3 {
-    margin: 0;
-}
-
-/* house*/
-.edmond a,
-.montreal a,
-.calgary a {
-    color: #1f1f56;
+    margin-bottom: 5px;
     font-size: 14px;
+    color: #1f1f56;
+    text-transform: uppercase;
+}
+
+h3 b {
+    text-transform: lowercase;
+}
+
+.wrapper {
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 960rem;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 28rem;
+    row-gap: 28rem;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.top-line{
+    padding: 18rem 0;
+    background-color: #1f1f56;
+}
+
+.top-menu {
+    display: flex;
+}
+
+.top-menu li {
+    margin-right: 22rem;
+}
+
+.top-menu a {
+    font-size: 14rem;
+    letter-spacing: 2rem;
+    color: #b1b1d2;
+}
+
+.top-menu a:hover {
+    color: #fd8300;
+}
+
+.social {
+    display: flex;
+}
+
+.social li {
+    margin-left: 23rem;
+}
+
+.social a {
+    display: block;
+    background: url(../img/sprite.png) no-repeat;
+}
+
+a.fb {
+    height: 19px;
+    width: 10px;
+    background-position: 0 0;
+}
+
+li:hover>.fb {
+    height: 19px;
+    width: 10px;
+    background-position: 0 -21px;
+}
+
+a.tw {
+    width: 18px;
+    height: 15px;
+    background-position: -12px 0;
+}
+
+li:hover>.tw {
+    width: 18px;
+    height: 15px;
+    background-position: -12px -21px;
+}
+
+a.inst {
+    width: 19px;
+    height: 19px;
+    background-position: -32px 0; 
+}
+
+li:hover>.inst {
+    width: 19px;
+    height: 19px;
+    background-position: -32px -21px; 
+}
+
+.header-contacts {
+    align-items: center;
+    padding: 30px 0;
+}
+
+/* phone number */
+.contact,
+.messenger {
+    padding-left: 38px;
+}
+
+.contact p:first-child,
+.messenger p:first-child {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #25252c;
+    font-size: 18rem;
     font-weight: bold;
-    line-height: 1.7em;
     text-decoration: none;
-}
-
-h3:hover>a {
-    text-decoration: underline;
-}
-
-.edmond p,
-.montreal p,
-.calgary p {
-    color: #9999a6;
-    font-size: 13px;
     line-height: 1.3em;
 }
 
-/* side menu category */
-.menu {
-    display: block;
+.messenger a {
+    color: #25252c;
+    font-size: 16rem;
+    line-height: 1.5em;
+    text-decoration: none;
 }
 
-.menu li:hover>a{
+.messenger a:hover{
+    text-decoration: underline;
+}
+
+.phone,
+.email,
+.skype {
+    position: relative;
+}
+
+.phone::before,
+.email::before,
+.skype::before {
+    content: "";
+    position: absolute;
+    top: 3rem;
+    left: -29rem;
+    background: url(../img/sprite.png);
+}
+
+/* pseudo styles for icons */
+.phone::before {
+    background-position: -53rem 0;
+    width: 16rem;
+    height: 17rem;
+}
+
+.email::before {
+    background-position: -71rem -3rem;
+    width: 17rem;
+    height: 13rem;
+}
+
+.skype::before {
+    background-position: -90rem 0;
+    width: 18rem;
+    height: 19rem;
+}
+
+.stick {
+    position: relative;
+}
+
+.stick::before {
+    content: '';
+    position: absolute;
+    left: -15rem;
+    width: 1px;
+    height: 51rem;
+    background-color: #e4e4ec;
+}
+
+/* communication button */
+.cta a {
+    display: inline-block;
+    padding: 14rem 30rem;
+    color: #25252c;
+    font-size: 16rem;
+    font-weight: bold;
+    border-radius: 28rem;
+    border: 2rem solid #fd8300;
+}
+
+.cta a:hover {
+    color: #fff;
+    background-color: #fd8300;
+    transition-duration: 0.5s;
+}
+/* main picture with offers */
+.proposition {
+    padding: 50rem 0 35rem;
+    text-align: center;
+    background: #1e1615 url(../img/mainfoto.png) center / cover;
+}
+
+.proposition p {
+    margin: 0;
+}
+
+.prop-title {
+    letter-spacing: 2px;
+    color: #fff;
+    font: bold 30rem "Roboto Slab", serif;
+    text-transform: uppercase;
+}
+/* offers */
+p.prop-description {
+    margin: 10rem 0;
+    font-size: 14rem;
+    color: #fff;
+}
+
+.prop-price {
+    font-size: 24rem;
+    color: #fd8300;
+    font-weight: bold;
+}
+
+.prop-price b {
+    font-size: 40rem;
+}
+
+/* basic information about the company */
+
+.blog-wrap {
+    padding: 35rem 0 45rem;
+}
+
+.main-text p {
+    font-size: 14rem;
+    line-height: 1.7em;
+    color: #666;
+}
+
+.main-text a {
+    color: #fd8300;
+    font-size: 14rem;
+    font-weight: bold;
+}
+
+.main-text a:hover {
+    text-decoration: underline;
+}
+
+/* house*/
+.house {
+    position: relative;
+}
+
+.house a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.house a:hover ~ h3 {
+    text-decoration: underline;
+}
+
+.house p {
+    margin: 0;
+    font-size: 13rem;
+    line-height: 18rem;
+    color: #9999a6;
+}
+
+/* sidebar menu left */
+
+.aside-menu {
+    position: sticky;
+    top: 35rem;
+    width: 220rem;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+
+.aside-menu p {
+    margin: 0;
+    padding: 12rem 15rem;
+    color: #fff;
+    font: bold 16rem "Roboto Slab", serif;
+    background-color: #1f1f56;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12rem 15rem;
+    font-size: 14rem;
+    background-color: #e4e4ec;
+}
+
+.sidebar > li > a {
+    position: relative;
+    color: #25252c;
+}
+
+.sidebar > li > a:before {
+    content: '';
+    position: absolute;
+    top: 16rem;
+    right: 15rem;
+    width: 7rem;
+    height: 7rem;
+    border-bottom: 2px solid #666;
+    border-right: 2px solid #666;
+    box-sizing: border-box;
+    transform: rotate(-45deg);
+}
+
+.sidebar > li:hover a:before {
+    border-bottom-color: #fff;
+    border-right-color: #fff;
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+}
+
+.sidebar > li + li > a {
+    border-top: 1px solid #cdcddd;
+}
+
+.sidebar > li:hover > a {
     color: #fff;
     background-color: #fd8300;
 }
 
-.category {
-    margin: 0;
-    padding: 10px 15px;
-    width: 200px;
-    color: #fff;
-    font-size: 16px;
-    font-family: "Roboto Slab", serif;
-    line-height: 1.5em;
-    background-color: #1f1f56;
-    border-radius: 3px 3px 0 0;
+.sidebar li:hover .sub-menu {
+    max-height: 1000rem;
+    visibility: visible;
+    transition: max-height 1s ease;
 }
 
-.list,
-.skr-child {
-    margin: 0;
-    padding: 0;
-    color: #25252c;
-    font-size: 14px;
-    line-height: 1.7em;
-    background-color: #e4e4ec;
+.sub-menu {
+    max-height: 0;
+    visibility: hidden;
 }
 
-.list {
-    border-radius: 0 0 3px 3px;
+.sub-menu a {
+    padding-left: 30rem;
+    color: #666;
 }
 
-.skr  {
-    position: relative;
-}
-
-.arrow::after{
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    border-bottom: 1px solid #262626;
-    border-right: 1px solid #262626;
-    transform: rotate(-45deg);
-    top: 45%;
-    right: 6%;
-}
-
-.list>li:hover>.arrow::after{
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
-    transform: rotate(45deg);
-    top: 10%;
-    right: 6%;
-
-}
-
-.skr:last-child {
-    box-shadow: none;
-}
-
-.skr {
-    box-shadow: inset 0px -1px 0px #cecedd;
-}
-
-.skr a {
-    display: block;
-    padding: 10px 15px 10px;
-}
-
-.menu a {
-    color: #25252c;
-    font-size: 14px;
-    line-height: 1.7em;
-}
-
-.skr-child {
-    display: none;
-}
-
-.skr-child a {
-    display: block;
-    padding-left: 30px;
-    color: #666666;
-}
-
-.skr-child li:hover>a {
-    color: #666666;
+.sub-menu a:hover {
     background-color: #cecedd;
 }
 
-.skr:hover>.skr-child{
-   display: block;
-}
-
 /* bottom navigation */
-.company {
-    margin: 0 auto;
+
+.footer-top {
+    padding: 40rem 0 30rem;
     background-color: #ededf5;
 }
 
-.company-wrap {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 15px 0 15px;
-    max-width: 960px;
-}
-
-.info-list,
-.info-twolist {
-    padding-left: 0;
-    font-size: 14px;
+.info-list a {
+    color: #666666;
+    font-size: 14rem;
     line-height: 1.9em;
 }
 
-.info-list a,
-.info-twolist a {
-    color: #666666;
-}
-
-.company li:hover>a {
+.info-list a:hover {
     text-decoration: underline;
 }
 
-.footer {
-    margin: 0;
-    padding: 15px;
-    color: #9999a6;
-    font-size: 13px;
-    line-height: 1.3em;
-    text-align: center;
+.footer-bottom {
     background-color: #dcdce6;
+}
+
+.footer-bottom p {
+    margin: 0;
+    padding: 14rem 15rem;
+    font-size: 13rem;
+    line-height: 18rem;
+    color: #9999a6;
+    text-align: center;
 }
