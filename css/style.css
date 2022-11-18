@@ -196,10 +196,9 @@ li:hover>.inst {
     color: #25252c;
     font-size: 16rem;
     line-height: 1.5em;
-    text-decoration: none;
 }
 
-.messenger a:hover{
+a.email {
     text-decoration: underline;
 }
 
@@ -436,10 +435,10 @@ p.prop-description {
     font-size: 14rem;
     line-height: 1.9em;
     color: #666;
+    text-decoration: none;
 }
 
 .info-list a:hover {
-    
     color: #fd8300;
     text-decoration: underline;
 }
