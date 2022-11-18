@@ -214,7 +214,7 @@ li:hover>.inst {
 .skype::before {
     content: "";
     position: absolute;
-    top: 3rem;
+    top: 2rem;
     left: -29rem;
     background: url(../img/sprite.png);
 }
@@ -245,7 +245,8 @@ li:hover>.inst {
 .stick::before {
     content: '';
     position: absolute;
-    left: -15rem;
+    top: 3rem;
+    left: -10rem;
     width: 1px;
     height: 51rem;
     background-color: #e4e4ec;
