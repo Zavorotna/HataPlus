@@ -12,6 +12,8 @@ h1 {
 table {
     width: 100%;
     border-collapse: collapse;
+    border-radius: 3px;
+    overflow: hidden;
 }
 
 thead {
