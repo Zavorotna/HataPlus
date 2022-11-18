@@ -433,12 +433,14 @@ p.prop-description {
 }
 
 .info-list a {
-    color: #666666;
     font-size: 14rem;
     line-height: 1.9em;
+    color: #666;
 }
 
 .info-list a:hover {
+    
+    color: #fd8300;
     text-decoration: underline;
 }
 
@@ -448,7 +450,7 @@ p.prop-description {
 
 .footer-bottom p {
     margin: 0;
-    padding: 14rem 15rem;
+    padding: 14rem 0;
     font-size: 13rem;
     line-height: 18rem;
     color: #9999a6;
