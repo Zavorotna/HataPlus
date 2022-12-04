@@ -1,0 +1,137 @@
+header {
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin: 0;
+    padding-bottom: 25rem;
+    font-size: 24rem;
+    color: #24242b;
+}
+
+h2 {
+    margin: 0;
+    padding-bottom: 20rem;
+    font-size: 14rem;
+    color: #24242b;
+}
+
+p {
+    margin: 0;
+    padding-bottom: 9rem;
+    font-size: 14em;
+    color: #666666;
+}
+
+.contact-adress {
+    margin: 0;
+}
+
+.office a {
+    font-size: 16rem;
+    text-decoration: underline;
+    color: #25252c;
+    font-family: "Arial";
+}
+
+a.tel {
+    text-decoration: none;
+    font-size: 18rem;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.office p:hover > a,
+.consultation p:hover > a {
+    color: #fd8300;
+}
+
+.paypall {
+    width: 254rem;
+}
+
+.paypall p {
+    padding-bottom: 23px;
+}
+
+.paypall > p:last-child {
+    width: 216rem;
+}
+
+.map-blok {
+    padding-bottom: 40px;
+}
+
+.map {
+    position: relative;
+    width: 450rem;
+    height: 340rem;
+    overflow: hidden;
+}
+
+.map iframe {
+    position: absolute;
+    width: 450px;
+    height: 500rem;
+    top: -65rem;
+    left: -5rem;
+}
+
+form {
+    display: block;
+    max-width: 467rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 13px;
+    color: #9999a6;
+    font-style: italic;
+    font-family: "Arial";
+}
+
+.input-flex {
+    column-gap: 0;
+}
+
+.input-flex > input:first-child {
+    margin-right: 15px;
+}
+
+input {
+    margin-bottom: 15px;
+    outline: none;
+}
+
+input[type="text"],
+textarea {
+    width: 437rem;
+    padding: 15rem;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #c5c5d4;
+}
+
+input[type="submit"] {
+    margin: 12px 0 0;
+    width: 140px;
+    height: 41px;
+    color: #fff;
+    background-color: #fd8300;
+    border-radius: 21px;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #fff;
+    color: #fd8300;
+    border: 1px solid #fd8300;
+}
+
+input[type="checkbox"] {
+    margin: 25px 0 0;
+}
+
+
+
