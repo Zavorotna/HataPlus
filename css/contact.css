@@ -4,7 +4,7 @@ header {
 
 h1 {
     margin: 0;
-    padding-bottom: 25rem;
+    padding: 40rem 0 25rem;
     font-size: 24rem;
     color: #24242b;
 }
@@ -60,13 +60,13 @@ a.tel {
 }
 
 .map-blok {
+    align-items: stretch;
     padding-bottom: 40px;
 }
 
 .map {
     position: relative;
     width: 450rem;
-    height: 340rem;
     overflow: hidden;
 }
 
@@ -74,8 +74,8 @@ a.tel {
     position: absolute;
     width: 450px;
     height: 500rem;
-    top: -65rem;
-    left: -5rem;
+    top: -100rem;
+    left: -2rem;
 }
 
 form {
@@ -111,6 +111,7 @@ textarea {
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #c5c5d4;
+    outline: none;
 }
 
 input[type="submit"] {
