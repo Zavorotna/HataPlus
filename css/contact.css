@@ -37,14 +37,16 @@ textarea::placeholder {
 }
 
 input {
-    margin-bottom: 15px;
+    margin-bottom: 9px;
     outline: none;
 }
 
 input[type="text"],
+input[type="tel"],
 textarea {
     width: 100%;
     padding: 12rem;
+    font: 14rem "Roboto Slab", serif;
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #c5c5d4;
@@ -53,7 +55,8 @@ textarea {
 }
 
 textarea {
-    resize: none;
+    max-height: 105px;
+    resize: vertical;
 }
 
 input[type="submit"] {
@@ -81,8 +84,18 @@ input[type="checkbox"] {
     margin: 38px 0 0;
 }
 
+.button {
+    justify-content: flex-start;
+    column-gap: 29px;
+}
+
 .contact-adress {
     margin: 0;
+}
+
+.adress {
+    justify-content: flex-start;
+    column-gap: 107px;
 }
 
 .office a {
@@ -118,6 +131,7 @@ a.tel {
 }
 
 .map-blok {
+    justify-content: space-around;
     align-items: stretch;
     padding-bottom: 40px;
 }
