@@ -55,8 +55,8 @@ textarea {
 }
 
 textarea {
-    max-height: 105px;
     resize: vertical;
+    height: 106px;
 }
 
 input[type="submit"] {
@@ -76,7 +76,6 @@ input[type="submit"]:hover {
     border: 1px solid #fd8300;
     cursor: pointer;
 }
-
 
 .button {
     align-items: flex-end;
