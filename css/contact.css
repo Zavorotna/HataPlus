@@ -46,7 +46,7 @@ input[type="tel"],
 textarea {
     width: 100%;
     padding: 12rem;
-    font: 14rem "Roboto Slab", serif;
+    font: 14rem "Roboto Slab", sans-serif;
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #c5c5d4;
@@ -56,6 +56,7 @@ textarea {
 
 textarea {
     resize: vertical;
+    min-height: 106px;
     height: 106px;
 }
 
