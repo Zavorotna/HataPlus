@@ -45,7 +45,8 @@ input[type="tel"],
 textarea {
     width: 100%;
     padding: 12rem;
-    font-family: "Roboto Slab", sans-serif;
+    font-size: 14rem;
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #c5c5d4;
