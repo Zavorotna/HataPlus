@@ -193,8 +193,8 @@ a.tel {
     left: 4px;
     width: 8px;
     height: 5px;
-    border-left: 3px solid #1f1f56;
-    border-bottom: 3px solid #1f1f56;
+    border-left: 2px solid #1f1f56;
+    border-bottom: 2px solid #1f1f56;
     transform: rotate(-45deg);
     box-sizing: border-box;
 }
