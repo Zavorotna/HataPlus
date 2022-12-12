@@ -189,7 +189,7 @@ a.tel {
 }
 
 .style-check:checked + label::after {
-    top: 2px;
+    top: 3px;
     left: 4px;
     width: 8px;
     height: 5px;
