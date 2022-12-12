@@ -18,7 +18,6 @@ h2 {
 
 p {
     margin: 0;
-    padding-bottom: 9rem;
     font-size: 14em;
     color: #666666;
 }
@@ -86,6 +85,10 @@ input[type="submit"]:hover {
 
 .contact-adress {
     margin: 0;
+}
+
+.adress p {
+    padding-bottom: 9rem;
 }
 
 .adress {
